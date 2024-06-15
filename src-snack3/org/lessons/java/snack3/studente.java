@@ -11,7 +11,7 @@ public class studente {
 		this.corsoDiLaurea = corsoDiLaurea;
 	}
 
-	public String toString() {
+	public String getInfo() {
 		return "Studente: " + nome + ", matricola: " + matricola + ", corso di laurea: " + corsoDiLaurea;
 	}
 }
