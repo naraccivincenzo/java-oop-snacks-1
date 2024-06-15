@@ -252,3 +252,8 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/java,intellij,eclipse,maven,windows
+/.idea/vcs.xml
+/.idea/modules.xml
+/.idea/misc.xml
+/.idea/.gitignore
+/java-oop-snacks-1.iml

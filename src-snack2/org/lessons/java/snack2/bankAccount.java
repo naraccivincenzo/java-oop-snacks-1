@@ -4,27 +4,29 @@ public class bankAccount {
 	private int accountNumber;
 	private float balance;
 
-	public bankAccount(int accountNumber, float balance) {
+	public bankAccount(int accountNumber) {
 		this.accountNumber = accountNumber;
 		this.balance = 0;
 	}
 
+	//method that returns the account number
 	public int getAccountNumber() {
 		return accountNumber;
 	}
 
-	public float getBalance() {
-		return balance;
+//method that subtracts the amount from the balance
+	public void withdraw(float amount) {
+		this.balance -= amount;
 	}
 
-	public float withdraw(float amount) {
-		this.balance = balance - amount;
-		return balance;
+	//method that adds the amount to the balance
+	public void deposit(float amount) {
+		this.balance += amount;
 	}
 
-	public float deposit(float amount) {
-		this.balance = balance + amount;
-		return balance;
+	//method that prints the balance with two decimal places
+	public String humanBalance() {
+		return String.format("Your balance is: € %.2f", this.balance);
 	}
 
 }
