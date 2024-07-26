@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Snack_file {
 
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(String[] args) {
         File file = new File("C:\\Users\\Flage\\Desktop\\Java\\java-oop-snacks-1\\src-snack-file\\test.txt");
 
         try (Scanner scanner = new Scanner(file)) {
